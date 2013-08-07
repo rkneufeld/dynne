@@ -49,7 +49,7 @@
   "Returns a function that, given inputs bound per `inputs`, returns a
   reified sound that samples via `op`."
   [op]
-  ;; TODO: Have a function that produes the op and one that evals that.
+  ;; TODO: Have a function that produces the op and one that evals that.
   (eval
    (let [input-sym (gensym "input")]
      `(fn [~input-sym]
